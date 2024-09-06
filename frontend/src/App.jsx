@@ -62,7 +62,7 @@ const [url, setUrl] = useState("");
 
   const handleClick = async () => {
     try {
-      const response = await fetch("/shorten", {
+      const response = await fetch("/api/shorten", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

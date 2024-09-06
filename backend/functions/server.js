@@ -38,7 +38,7 @@ const router = express.Router();
 app.use(cors()); // Allow requests from frontend
 app.use(express.json()); // Parse incoming JSON requests
 
-router.post('/shorten', async (req, res) => {
+router.post('/api/shorten', async (req, res) => {
   const longURL = req.body.url;
   
   try {

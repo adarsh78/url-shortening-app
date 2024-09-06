@@ -1,0 +1,11 @@
+[build]
+  functions = "backend/functions"
+  publish = "frontend/dist" # Assuming your React build output is in 'dist'
+
+[functions]
+  external_node_modules = ["express", "axios", "cors", "serverless-http"]
+
+[[redirects]]
+  from = "/api/*"
+  to = "/.netlify/functions/server/:splat"
+  status = 200

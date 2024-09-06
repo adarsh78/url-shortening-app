@@ -1,0 +1,17 @@
+{
+  "name": "url-shortening-app",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "build": "cd frontend && npm run build",
+    "start": "npm run build"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "serverless-http": "^2.7.0"
+  },
+  "devDependencies": {}
+}
+

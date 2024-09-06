@@ -3,11 +3,10 @@
   publish = "frontend/dist" # Assuming 'dist' is the build output folder of your React app
 
 [functions]
-  external_node_modules = ["express", "axios"]
+  external_node_modules = ["serverless-http"]
   node_bundler = "esbuild"
 
 [[redirects]]
-  force = true
   from = "/api/*"
-  status = 200
   to = "/.netlify/functions/server/:splat"
+  status = 200

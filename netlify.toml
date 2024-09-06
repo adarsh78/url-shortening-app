@@ -1,10 +1,12 @@
 [build]
-  functions = "backend/functions"
-  publish = "frontend/dist" # Assuming 'dist' is the build output folder of your React app
+  base = "frontend" # Base directory where Netlify installs dependencies and runs the build command
+  command = "npm run build" # Build command for the React app
+  publish = "dist" # Publish directory for the built React app
 
 [functions]
-  external_node_modules = ["serverless-http"]
-  node_bundler = "esbuild"
+  directory = "../backend/functions" # Directory where your Netlify functions are located
+  external_node_modules = ["serverless-http"] # Ensure serverless-http is included in your function bundle
+  node_bundler = "esbuild" # Bundler for the serverless functions
 
 [[redirects]]
   from = "/api/*"

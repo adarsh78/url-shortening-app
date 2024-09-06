@@ -1,0 +1,13 @@
+[build]
+  functions = "backend/functions"
+  publish = "frontend/dist" # Assuming 'dist' is the build output folder of your React app
+
+[functions]
+  external_node_modules = ["express", "axios"]
+  node_bundler = "esbuild"
+
+[[redirects]]
+  force = true
+  from = "/api/*"
+  status = 200
+  to = "/.netlify/functions/server/:splat"

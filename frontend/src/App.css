@@ -1,0 +1,44 @@
+.hamburger {
+    width: 30px;
+    height: 4px;
+    background: hsl(257,7%,63%);
+}
+
+/* .illustration {
+    background-image: url("./images/.illustration-working.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+} */
+
+.bg-shorten-mobile {
+    background: url("./images/bg-shorten-mobile.svg") no-repeat center/cover;
+    background-position: left 4rem bottom 2rem;
+}
+
+.card {
+    background: white;
+    width: 325px;
+    margin: auto;
+    padding-inline: 20px;
+    padding-bottom: 40px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.image-circle {
+    width: 90px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(257,27%,26%);
+    border-radius: 50%;
+    position: relative;
+    bottom: 45px;
+    left: 98px;
+}
+
+.boost-image {
+    background: url("./images/bg-boost-mobile.svg") no-repeat center/cover;
+}

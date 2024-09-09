@@ -9,7 +9,7 @@ app.use(cors()); // Allow requests from frontend
 app.use(express.json()); // Parse incoming JSON requests
 
 app.get('/', (req, res) => {
-  res.send('Backend server is running');
+  res.send('Backend server is running 123');
 });
 
 app.post('/shorten', async (req, res) => {

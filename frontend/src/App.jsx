@@ -39,47 +39,47 @@ const [url, setUrl] = useState("");
     setUrl(e.target.value);
   };
 
-  // const handleClick = async () => {
-  //   try {
-  //     const response = await fetch("http://localhost:5000/shorten", {
-  //       method: "POST",
-  //       headers: {
-  //         "Content-Type": "application/json",
-  //       },
-  //       body: JSON.stringify({ url }),
-  //     });
-
-  //     if (!response.ok) {
-  //       throw new Error("Failed to shorten URL");
-  //     }
-
-  //     const data = await response.json();
-  //     console.log("Shortened URL:", data.result_url);
-  //   } catch (error) {
-  //     console.error("Error:", error);
-  //   }
-  // };
-
   const handleClick = async () => {
     try {
-      const response = await fetch("/api/shorten", {
+      const response = await fetch("http://localhost:5000/shorten", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({ url }),
       });
-  
+
       if (!response.ok) {
         throw new Error("Failed to shorten URL");
       }
-  
+
       const data = await response.json();
       console.log("Shortened URL:", data.result_url);
     } catch (error) {
       console.error("Error:", error);
     }
   };
+
+  // const handleClick = async () => {
+  //   try {
+  //     const response = await fetch("/api/shorten", {
+  //       method: "POST",
+  //       headers: {
+  //         "Content-Type": "application/json",
+  //       },
+  //       body: JSON.stringify({ url }),
+  //     });
+  
+  //     if (!response.ok) {
+  //       throw new Error("Failed to shorten URL");
+  //     }
+  
+  //     const data = await response.json();
+  //     console.log("Shortened URL:", data.result_url);
+  //   } catch (error) {
+  //     console.error("Error:", error);
+  //   }
+  // };
   
 
 

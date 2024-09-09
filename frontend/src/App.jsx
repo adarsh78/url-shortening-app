@@ -41,7 +41,7 @@ const [url, setUrl] = useState("");
 
   const handleClick = async () => {
     try {
-      const response = await fetch("http://localhost:5000/shorten", {
+      const response = await fetch("https://url-shortening-app-770u.onrender.com/shorten", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

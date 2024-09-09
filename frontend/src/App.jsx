@@ -4,35 +4,6 @@ import axios from "axios";
 
 const App = () => {
 
-// const [url, setUrl] = useState("");
-
-// const handleChange = (e) => {
-//   setUrl(e.target.value);
-// }
-
-// const shortenUrl = async (longURL) => {
-//   try {
-//     const response = await fetch(`https://cors-anywhere.herokuapp.com/https://cleanuri.com/api/v1/shorten`, {
-//       method: "POST",
-//       headers: {
-//         "Content-Type": "application/x-www-form-urlencoded",
-//       },
-//       body: new URLSearchParams({ url: longURL }).toString(),
-//     });
-
-//     if (!response.ok) {
-//       throw new Error("Network response was not ok");
-//     }
-
-//     const data = await response.json();
-//     console.log("Shortened URL is: ", data);
-//     return data;
-//   } catch (error) {
-//     console.error("Error in fetching data: ", error);
-//     return null;
-//   }
-// };
-
 const [url, setUrl] = useState("");
 
   const handleChange = (e) => {
@@ -59,38 +30,6 @@ const [url, setUrl] = useState("");
       console.error("Error:", error);
     }
   };
-
-  // const handleClick = async () => {
-  //   try {
-  //     const response = await fetch("/api/shorten", {
-  //       method: "POST",
-  //       headers: {
-  //         "Content-Type": "application/json",
-  //       },
-  //       body: JSON.stringify({ url }),
-  //     });
-  
-  //     if (!response.ok) {
-  //       throw new Error("Failed to shorten URL");
-  //     }
-  
-  //     const data = await response.json();
-  //     console.log("Shortened URL:", data.result_url);
-  //   } catch (error) {
-  //     console.error("Error:", error);
-  //   }
-  // };
-  
-
-
-// const handleClick = async () => {
-//  const shortenedURL = await shortenUrl(url);
-//   console.log("url is: ", url);
-//   if(shortenedURL) {
-//     console.log("Shortened url is: ", shortenedURL );
-//   }
-// }
-
 
 
 

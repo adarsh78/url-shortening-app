@@ -4,17 +4,6 @@
     background: hsl(257,7%,63%);
 }
 
-/* .illustration {
-    background-image: url("./images/.illustration-working.svg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-} */
-
-.bg-shorten-mobile {
-    background: url("./images/bg-shorten-mobile.svg") no-repeat center/cover;
-    background-position: left 4rem bottom 2rem;
-}
 
 .card {
     background: white;
@@ -37,8 +26,4 @@
     position: relative;
     bottom: 45px;
     left: 98px;
-}
-
-.boost-image {
-    background: url("./images/bg-boost-mobile.svg") no-repeat center/cover;
 }

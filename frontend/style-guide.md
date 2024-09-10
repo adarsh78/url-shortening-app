@@ -18,7 +18,7 @@ The designs were created to the following widths:
 
 ### Secondary
 
-- Red: hsl(0, 87%, 67%)
+- Red: hsl(0,87%,67%)
 
 ### Neutral
 

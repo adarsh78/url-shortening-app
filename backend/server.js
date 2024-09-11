@@ -6,7 +6,7 @@ const app = express();
 const port = 5000;
 
 app.use(cors()); // Allow requests from frontend
-app.use(express.json()); // Parse incoming JSON requests
+app.use(express.json()); // Parse incoming JSON requests, converts JSON string into JS objects -> {url : "https://example.com"}
 
 app.get('/', (req, res) => {
   res.send('Backend server is running 123');

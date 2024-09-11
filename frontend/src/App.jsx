@@ -27,7 +27,7 @@ const App = () => {
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({ url }),
+        body: JSON.stringify({ url }),  // sends JSON string to backend -> (`{"url" : "https://example.com"}`)
       });
 
       if (!response.ok) {
